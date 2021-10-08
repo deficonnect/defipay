@@ -2,6 +2,8 @@ const { Socket } = require('dgram');
 const express = require('express');
 const path = require('path')
 
+require('dotenv').config();
+
 
 const app = express()
 const http = require('http').createServer(app)
@@ -17,7 +19,7 @@ io.on('connection',Socket=>{
     console.log('connection ready')
 })
 
-const PORT = process.env.PORT || PORT
+const PORT = process.env.PORT
 http.listen(PORT,()=>{
     console.log('server is runing on', PORT);
 })
