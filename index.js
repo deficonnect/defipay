@@ -19,7 +19,7 @@ io.on('connection',Socket=>{
     console.log('connection ready')
 })
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 8080 
 http.listen(PORT,()=>{
     console.log('server is runing on', PORT);
 })
