@@ -18,26 +18,23 @@
                             <div class="elementor-widget-container" style="margin-left: 30px !important;">
 
                                 <div class="card" style="margin-top: 40px;">
+
                                     <form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post">
-                                        <div class="form-group">
-                                            <label for="email">Email address</label>
-                                            <input type="email" class="form-control" id="email" style="background-color: #fff; width: 400px;"
-                                                aria-describedby="emailHelp" placeholder="Enter email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input type="name" class="form-control" id="name" style="background-color: #fff; width: 400px;"
-                                                aria-describedby="nameHelp" placeholder="Enter name" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <!-- Thank you page (optional) -->
-                                        <input type="hidden" name="thankyou_url" value="https://paul-82957.gr8.com/"/>
-                                        <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
-                                        <input type="hidden" name="start_day" value="0" />
-                                        <!-- Subscriber button -->
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Sign Up </button>
+                                            <!-- Name -->
+                                            name: <input type="text" name="name"/><br/>
+                                            <!-- Email field (required) -->
+                                            email: <input type="text" name="email"/><br/>
+                                            <!-- List token -->
+                                            <!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+                                            <input type="hidden" name="campaign_token" value="zRdbE" />
+                                            <!-- Thank you page (optional) -->
+                                            <input type="hidden" name="thankyou_url" value="https://paul-82957.gr8.com/"/>
+                                            <!-- Add subscriber to the follow-up sequence with a specified day (optional) -->
+                                            <input type="hidden" name="start_day" value="0" />
+                                            <!-- Subscriber button -->
+                                            <input type="submit" value="Subscribe"/>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
